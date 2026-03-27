@@ -1,0 +1,22 @@
+const jwt = require('jsonwebtoken');
+
+exports.protect = (req, res, next) => {
+  let token;
+  const authHeader = req.headers.authorization;
+  if (authHeader && authHeader.startsWith('Bearer ')) {
+    token = authHeader.split(' ')[1];
+  }
+  if (!token) return res.status(401).json({ message: 'Not authorized, token missing' });
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'secret');
+    req.user = decoded;
+    next();
+  } catch (err) {
+    res.status(401).json({ message: 'Token invalid' });
+  }
+};
+
+exports.admin = (req, res, next) => {
+  if (req.user && req.user.role === 'admin') return next();
+  return res.status(403).json({ message: 'Admin role required' });
+};
