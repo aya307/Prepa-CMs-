@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Art Gallery</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Bienvenue dans Art Gallery</h1>
+      <p>
+        Découvrez une collection unique de peintures, dessins et photographies
+        dans une galerie moderne et responsive.
+      </p>
+      <a href="#gallery" class="btn">Voir la galerie</a>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="section-title">
+      <h2>Nos œuvres</h2>
+      <p>Explorez nos créations artistiques par catégorie.</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active">Tous</button>
+      <button class="filter-btn">Peintures</button>
+      <button class="filter-btn">Dessins</button>
+      <button class="filter-btn">Photographies</button>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="card">
+        <img src="https://picsum.photos/400/300?random=1" alt="Œuvre 1" />
+        <div class="card-content">
+          <h3>Sunset Painting</h3>
+          <p>Une peinture inspirée d’un coucher de soleil.</p>
+          <span class="tag">Peinture</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/300?random=2" alt="Œuvre 2" />
+        <div class="card-content">
+          <h3>Sketch Portrait</h3>
+          <p>Un portrait dessiné avec un style minimaliste.</p>
+          <span class="tag">Dessin</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/300?random=3" alt="Œuvre 3" />
+        <div class="card-content">
+          <h3>Urban Photography</h3>
+          <p>Une photographie artistique en milieu urbain.</p>
+          <span class="tag">Photographie</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/300?random=4" alt="Œuvre 4" />
+        <div class="card-content">
+          <h3>Nature Colors</h3>
+          <p>Une œuvre inspirée par les couleurs de la nature.</p>
+          <span class="tag">Peinture</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/300?random=5" alt="Œuvre 5" />
+        <div class="card-content">
+          <h3>Abstract Lines</h3>
+          <p>Un dessin abstrait aux lignes modernes.</p>
+          <span class="tag">Dessin</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/300?random=6" alt="Œuvre 6" />
+        <div class="card-content">
+          <h3>Golden Light</h3>
+          <p>Photo capturant une lumière naturelle intense.</p>
+          <span class="tag">Photographie</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="section-title">
+      <h2>À propos</h2>
+    </div>
+    <div class="about-content">
+      <p>
+        Art Gallery est une application web développée avec la stack MERN pour
+        présenter et gérer une collection d’œuvres d’art de manière élégante,
+        moderne et intuitive.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>Une question ou une collaboration ?</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Art Gallery - Tous droits réservés</p>
+  </footer>
+</body>
+</html>

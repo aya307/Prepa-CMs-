@@ -94,11 +94,7 @@ cd backend
 ```
 
 Installer les dépendances :
-<<<<<<< HEAD
-1
-=======
 
->>>>>>> e912c5c4114b0da24163f6b1f2ae5c80f59fe71e
 ```bash
 npm install
 ```
@@ -292,8 +288,4 @@ Aya Znatni
 
 # 📄 Licence
 
-<<<<<<< HEAD
 MIT License
-=======
-MIT License
->>>>>>> e912c5c4114b0da24163f6b1f2ae5c80f59fe71e
